@@ -8,6 +8,7 @@ then
   rm -rf $1
 fi
 
+composer install --no-dev -o
 rm -f .php_cs.*
 rm -f composer.*
 rm -f .gitignore
@@ -21,3 +22,4 @@ rm -rf Makefile
 rm -rf .github
 rm -f cloudbuild.yaml
 rm -f .travis.yml
+
