@@ -1,14 +1,17 @@
 #!/bin/bash
 set -e
 
-echo "Prepare to delete dependencies"
+echo "Installing production dependencies with composer"
+
+composer install --no-dev -o
 
 if [ ! -z "$1" ]
 then
   rm -rf $1
 fi
 
-composer install --no-dev -o
+echo "Prepare to delete dependencies"
+
 rm -f .php_cs.*
 rm -f composer.*
 rm -f .gitignore
