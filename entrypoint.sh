@@ -18,3 +18,6 @@ rm -rf _dev
 rm -rf tests
 rm -rf docker-compose.yml
 rm -rf Makefile
+rm -rf .github
+rm -f cloudbuild.yaml
+rm -f .travis.yml
