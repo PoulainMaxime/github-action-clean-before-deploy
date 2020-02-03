@@ -1,10 +1,6 @@
 #!/bin/bash
 set -e
 
-echo "Installing production dependencies with composer"
-
-composer install --no-dev -o
-
 if [ ! -z "$1" ]
 then
   rm -rf $1
