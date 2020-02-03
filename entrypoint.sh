@@ -18,4 +18,3 @@ rm -rf _dev
 rm -rf tests
 rm -rf docker-compose.yml
 rm -rf Makefile
-rm -rf vendor
